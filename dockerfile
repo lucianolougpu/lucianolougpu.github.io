@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     git
 
 # Clonar el repositorio de GitHub (reemplaza con tu URL)
-RUN git clone https://github.com/lucianolougpu/lucianolougpu.git /tmp/html
+RUN git clone https://github.com/lucianolougpu/lucianolougpu.github.io /tmp/html
 
 # Limpiar el directorio de Apache y mover los archivos HTML
 RUN rm -rf /var/www/html/ && mv /tmp/html/ /var/www/html/ 
